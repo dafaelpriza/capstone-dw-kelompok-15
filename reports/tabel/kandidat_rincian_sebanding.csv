@@ -1,0 +1,6 @@
+rincian_bps,padanan_wdi,sebanding,alasan
+jumlah (9999),SI.POV.NAHC (total nasional),ya,"Keduanya persen penduduk di bawah garis kemiskinan nasional, tingkat nasional. Jenis periode berbeda: BPS semester/tahunan, WDI tahunan. Selisih rata-rata |WDI-S1| 0,032 vs |WDI-S2| 0,258 (n=14 dan 13). Definisi WDI: persentase penduduk di bawah garis kemiskinan nasional (sourceNote, sumber2_indikator.json); metadata tidak menyebut semester BPS yang dipakai."
+perkotaan (9999),tidak ada,tidak,"Di berkas WDI hanya ada SI.POV.DDAY dan SI.POV.NAHC, tidak ada versi perkotaan."
+perdesaan (9999),tidak ada,tidak,Sama seperti perkotaan: tidak ada indikator perdesaan di berkas WDI.
+provinsi (semua rincian),tidak ada,tidak,WDI hanya tingkat nasional (Indonesia).
+"desa tertinggal (var2190, var2191)",tidak ada,tidak,"Hitungan desa, bukan persen; tidak punya pembanding di paket (panduan kelompok bagian 3)."
