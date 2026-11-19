@@ -1,6 +1,7 @@
 {
   "metrik": {
-    "metrik_sesuai_pekerjaan": 1
+    "aturan_validasi": 13,
+    "aturan_lolos": 13
   },
   "seed": 0,
   "data_hash": "51a214fccf6711eefa382911a5be4f501cd6bd9d3b65eb8922543a65f3c7f3ed",
