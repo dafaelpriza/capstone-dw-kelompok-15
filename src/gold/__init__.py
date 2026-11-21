@@ -1,7 +1,7 @@
+﻿
+"""Tahap 4â€“6 â€” Reshape, integrasi, dan penyimpanan data Gold."""
 
-"""Tahap 4–6 — Reshape, integrasi, dan penyimpanan data Gold."""
-
-from src.gold import nasional
+from src.gold import muat_sql, nasional
 from pathlib import Path
 import sqlite3
 
@@ -250,4 +250,6 @@ def jalankan(silver):
     print(f"Database Gold berhasil dibuat: {lokasi_sql}")
 
     nasional.jalankan(silver)
+    muat_sql.jalankan()
     return hasil
+
