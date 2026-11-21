@@ -56,6 +56,29 @@ Proses menelusuri satu baris Silver:
 2. Cari berkas dengan jalur yang sama di dalam data/raw/.
 3. Hitung SHA-256 berkas tersebut dan bandingkan dengan _sha256_raw atau cocokkan dengan data/raw/MANIFEST.csv.
 
+Contoh Penelusuran Satu Baris Silver
+
+Sebagai contoh, salah satu observasi pada indikator persentase penduduk
+miskin (var192) memiliki informasi berikut:
+
+| Kolom | Nilai |
+|---|---|
+| sumber | bps |
+| seri_kode | var192 |
+| wilayah_kode | 640000 |
+| nama_wilayah | KALIMANTAN TIMUR |
+| periode | 2008 |
+| jenis_periode | tahun |
+| rincian | Perkotaan |
+| nilai | 5.89 |
+| satuan | persen |
+| _berkas_raw | bps/2026-10-20/json/sdg10_10_1_1_f_v192.json |
+| _sha256_raw | 8d3c028b5e6b246865af1c635fd4e835e5cd12aca7a9387fc2b53e2270771fc4 |
+
+Berdasarkan informasi tersebut, berkas mentah dapat ditemukan pada 
+lokasi: data/raw/bps/2026-10-20/json/sdg10_10_1_1_f_v192.json
+Nilai _sha256_raw dapat dicocokkan dengan catatan berkas yang sama pada data/raw/MANIFEST.csv. Pada berkas JSON BPS tersebut, observasi dengan kode data 640019243210863 memiliki nilai 5.89, sesuai dengan observasi yang dicatat pada Silver.
+
 Dengan demikian, asal observasi dapat diperiksa kembali tanpa menebak sumbernya. Daftar berkas dan hash resmi juga dicatat pada data/raw/MANIFEST.csv.
 
 
