@@ -29,10 +29,14 @@ PASANGAN = [
 
 
 def tabel_nasional(silver):
-    """Matriks periode x seri untuk baris Indonesia (9999) dengan rincian total/jumlah."""
+    """Matriks periode x seri untuk baris Indonesia dengan rincian total/jumlah."""
     rincian_norm = silver["rincian"].fillna("").astype(str).str.strip().str.lower()
+    nama_norm = silver["nama_wilayah"].fillna("").astype(str).str.strip().str.lower()
+    kode_num = pd.to_numeric(silver["wilayah_kode"], errors="coerce")
+
+    is_indonesia = (kode_num == WILAYAH_INDONESIA) | (nama_norm.isin(["indonesia", "nasional"]))
     s = silver[
-        (pd.to_numeric(silver["wilayah_kode"], errors="coerce") == WILAYAH_INDONESIA)
+        is_indonesia
         & (rincian_norm.isin(["total", "jumlah"]))
         & (silver["seri_kode"].isin(SERI_AKTIF))
     ]
