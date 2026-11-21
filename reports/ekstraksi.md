@@ -3,7 +3,7 @@
 - **Berkas di MANIFEST / dibaca:** 11 / 11 berkas (0 terlewat)
 - **Total baris observasi mentah (BPS JSON + BPS CSV + WDI):** 7,804 baris
 - **Rincian baris observasi:** BPS JSON = 3,869, BPS CSV = 3,869, WDI (`SI.POV.NAHC`) = 66
-- **Durasi ekstraksi:** 0.05 detik
+- **Durasi ekstraksi:** 0.13 detik
 
 ## Jumlah Baris per Berkas
 
