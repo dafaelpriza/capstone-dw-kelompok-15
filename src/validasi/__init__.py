@@ -201,5 +201,18 @@ def jalankan(silver, gold):
     print(f"Aturan gagal  : {jumlah_gagal}")
     print("Laporan       : reports/validasi.md")
 
+    # Mencatat metrik Validasi untuk NIM 124450123
+    from src.common.hasil import tulis_hasil
+
+    tulis_hasil(
+        "124450123",
+        {
+            "aturan_validasi": len(semua_hasil),
+            "aturan_lolos": jumlah_lolos,
+            "aturan_gagal": jumlah_gagal
+        },
+        seed=0
+    )
+    
     return semua_hasil
 
