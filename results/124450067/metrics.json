@@ -3,6 +3,8 @@
     "pasangan_rekonsiliasi": 1,
     "pasangan_konteks": 1,
     "periode_beririsan": 19,
+    "irisan_p1": 19,
+    "irisan_p2": 3,
     "baris_sql": 3897
   },
   "seed": 0,
