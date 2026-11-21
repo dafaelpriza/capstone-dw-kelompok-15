@@ -5,7 +5,10 @@
     "periode_beririsan": 19,
     "irisan_p1": 19,
     "irisan_p2": 3,
-    "baris_sql": 3897
+    "baris_sql": 3897,
+    "cabang_tergabung": 6,
+    "validasi_lolos": 13,
+    "validasi_gagal": 0
   },
   "seed": 0,
   "data_hash": "51a214fccf6711eefa382911a5be4f501cd6bd9d3b65eb8922543a65f3c7f3ed",
