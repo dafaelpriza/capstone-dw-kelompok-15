@@ -19,7 +19,6 @@ def _normalisasi_wilayah(wilayah_id, nama_wilayah):
         kode_num = int(float(wilayah_id))
     except (ValueError, TypeError):
         kode_num = 0
-    # Kode BPS provinsi biasanya 2 digit (11..94) atau 4 digit (1100..9400) -> jadikan kode_bps * 100
     if kode_num >= 10000:
         kode_38 = kode_num
     elif kode_num >= 100:
