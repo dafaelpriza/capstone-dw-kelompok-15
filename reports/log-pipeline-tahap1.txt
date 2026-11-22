@@ -1,0 +1,22 @@
+﻿data/raw: 11 berkas cocok dengan MANIFEST.csv
+ekstraksi  selesai dalam 0.1 s
+Silver berhasil dibuat: 3897 baris.
+File: data/silver/silver.parquet
+silver     selesai dalam 0.1 s
+Menyiapkan data Gold...
+Membuat panel provinsi...
+Membuat rekonsiliasi nasional...
+Berhasil menyimpan: data\gold\panel_provinsi.parquet (1368 baris)
+Berhasil menyimpan: data\gold\rekonsiliasi_nasional.parquet (56 baris)
+Database Gold berhasil dibuat: data\gold\gold.sqlite
+Database DuckDB berhasil dibuat: C:\Users\LENOVO\workbench-workspace-akun\124450131\capstone-data-wrangling\capstone-dw-kelompok-15\data\gold\gudang.duckdb (3897 baris)
+gold       selesai dalam 0.4 s
+
+=== HASIL VALIDASI ===
+Jumlah aturan : 13
+Aturan lolos  : 13
+Aturan gagal  : 0
+Laporan       : reports/validasi.md
+validasi   selesai dalam 0.3 s
+Periksa skema minimal: python -m src.common.skema data/silver/silver.parquet
+LOLOS  3,897 baris, 4 seri, 40 wilayah, 4 berkas sumber
