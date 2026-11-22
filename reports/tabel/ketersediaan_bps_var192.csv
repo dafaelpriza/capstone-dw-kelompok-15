@@ -1,0 +1,335 @@
+wilayah_id,wilayah,turvar_id,turvar,periode_id,periode,satuan,tahun_awal,tahun_akhir,jumlah_observasi,jumlah_baris
+1100,ACEH,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1100,ACEH,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1100,ACEH,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+1100,ACEH,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1100,ACEH,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1100,ACEH,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+1100,ACEH,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1100,ACEH,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+1100,ACEH,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+1200,SUMATERA UTARA,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1200,SUMATERA UTARA,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1200,SUMATERA UTARA,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+1200,SUMATERA UTARA,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1200,SUMATERA UTARA,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1200,SUMATERA UTARA,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+1200,SUMATERA UTARA,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1200,SUMATERA UTARA,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+1200,SUMATERA UTARA,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+1300,SUMATERA BARAT,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1300,SUMATERA BARAT,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1300,SUMATERA BARAT,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+1300,SUMATERA BARAT,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1300,SUMATERA BARAT,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1300,SUMATERA BARAT,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+1300,SUMATERA BARAT,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1300,SUMATERA BARAT,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+1300,SUMATERA BARAT,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+1400,RIAU,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1400,RIAU,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1400,RIAU,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+1400,RIAU,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1400,RIAU,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1400,RIAU,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+1400,RIAU,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1400,RIAU,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+1400,RIAU,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+1500,JAMBI,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1500,JAMBI,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1500,JAMBI,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+1500,JAMBI,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1500,JAMBI,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1500,JAMBI,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+1500,JAMBI,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1500,JAMBI,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+1500,JAMBI,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+1600,SUMATERA SELATAN,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1600,SUMATERA SELATAN,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1600,SUMATERA SELATAN,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+1600,SUMATERA SELATAN,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1600,SUMATERA SELATAN,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1600,SUMATERA SELATAN,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+1600,SUMATERA SELATAN,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1600,SUMATERA SELATAN,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+1600,SUMATERA SELATAN,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+1700,BENGKULU,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1700,BENGKULU,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1700,BENGKULU,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+1700,BENGKULU,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1700,BENGKULU,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1700,BENGKULU,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+1700,BENGKULU,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1700,BENGKULU,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+1700,BENGKULU,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+1800,LAMPUNG,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1800,LAMPUNG,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1800,LAMPUNG,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+1800,LAMPUNG,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1800,LAMPUNG,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1800,LAMPUNG,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+1800,LAMPUNG,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1800,LAMPUNG,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+1800,LAMPUNG,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+1900,KEP. BANGKA BELITUNG,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1900,KEP. BANGKA BELITUNG,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1900,KEP. BANGKA BELITUNG,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+1900,KEP. BANGKA BELITUNG,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1900,KEP. BANGKA BELITUNG,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+1900,KEP. BANGKA BELITUNG,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+1900,KEP. BANGKA BELITUNG,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+1900,KEP. BANGKA BELITUNG,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+1900,KEP. BANGKA BELITUNG,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+2100,KEP. RIAU,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+2100,KEP. RIAU,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+2100,KEP. RIAU,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+2100,KEP. RIAU,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+2100,KEP. RIAU,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+2100,KEP. RIAU,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+2100,KEP. RIAU,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+2100,KEP. RIAU,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+2100,KEP. RIAU,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+3100,DKI JAKARTA,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3100,DKI JAKARTA,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+3100,DKI JAKARTA,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+3100,DKI JAKARTA,433,Perdesaan,62,Semester 2 (September),Persen,2012,2016,2,2
+3100,DKI JAKARTA,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3100,DKI JAKARTA,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+3100,DKI JAKARTA,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+3200,JAWA BARAT,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3200,JAWA BARAT,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+3200,JAWA BARAT,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+3200,JAWA BARAT,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3200,JAWA BARAT,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+3200,JAWA BARAT,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+3200,JAWA BARAT,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3200,JAWA BARAT,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+3200,JAWA BARAT,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+3300,JAWA TENGAH,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3300,JAWA TENGAH,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+3300,JAWA TENGAH,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+3300,JAWA TENGAH,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3300,JAWA TENGAH,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+3300,JAWA TENGAH,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+3300,JAWA TENGAH,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3300,JAWA TENGAH,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+3300,JAWA TENGAH,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+3400,DI YOGYAKARTA,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3400,DI YOGYAKARTA,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+3400,DI YOGYAKARTA,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+3400,DI YOGYAKARTA,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3400,DI YOGYAKARTA,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+3400,DI YOGYAKARTA,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+3400,DI YOGYAKARTA,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3400,DI YOGYAKARTA,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+3400,DI YOGYAKARTA,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+3500,JAWA TIMUR,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3500,JAWA TIMUR,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+3500,JAWA TIMUR,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+3500,JAWA TIMUR,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3500,JAWA TIMUR,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+3500,JAWA TIMUR,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+3500,JAWA TIMUR,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3500,JAWA TIMUR,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+3500,JAWA TIMUR,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+3600,BANTEN,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3600,BANTEN,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+3600,BANTEN,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+3600,BANTEN,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3600,BANTEN,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+3600,BANTEN,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+3600,BANTEN,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+3600,BANTEN,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+3600,BANTEN,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+5100,BALI,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+5100,BALI,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+5100,BALI,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+5100,BALI,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+5100,BALI,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+5100,BALI,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+5100,BALI,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+5100,BALI,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+5100,BALI,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+5200,NUSA TENGGARA BARAT,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+5200,NUSA TENGGARA BARAT,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+5200,NUSA TENGGARA BARAT,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+5200,NUSA TENGGARA BARAT,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+5200,NUSA TENGGARA BARAT,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+5200,NUSA TENGGARA BARAT,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+5200,NUSA TENGGARA BARAT,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+5200,NUSA TENGGARA BARAT,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+5200,NUSA TENGGARA BARAT,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+5300,NUSA TENGGARA TIMUR,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+5300,NUSA TENGGARA TIMUR,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+5300,NUSA TENGGARA TIMUR,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+5300,NUSA TENGGARA TIMUR,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+5300,NUSA TENGGARA TIMUR,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+5300,NUSA TENGGARA TIMUR,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+5300,NUSA TENGGARA TIMUR,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+5300,NUSA TENGGARA TIMUR,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+5300,NUSA TENGGARA TIMUR,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+6100,KALIMANTAN BARAT,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6100,KALIMANTAN BARAT,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+6100,KALIMANTAN BARAT,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+6100,KALIMANTAN BARAT,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6100,KALIMANTAN BARAT,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+6100,KALIMANTAN BARAT,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+6100,KALIMANTAN BARAT,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6100,KALIMANTAN BARAT,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+6100,KALIMANTAN BARAT,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+6200,KALIMANTAN TENGAH,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6200,KALIMANTAN TENGAH,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+6200,KALIMANTAN TENGAH,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+6200,KALIMANTAN TENGAH,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6200,KALIMANTAN TENGAH,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+6200,KALIMANTAN TENGAH,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+6200,KALIMANTAN TENGAH,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6200,KALIMANTAN TENGAH,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+6200,KALIMANTAN TENGAH,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+6300,KALIMANTAN SELATAN,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6300,KALIMANTAN SELATAN,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+6300,KALIMANTAN SELATAN,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+6300,KALIMANTAN SELATAN,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6300,KALIMANTAN SELATAN,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+6300,KALIMANTAN SELATAN,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+6300,KALIMANTAN SELATAN,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6300,KALIMANTAN SELATAN,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+6300,KALIMANTAN SELATAN,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+6400,KALIMANTAN TIMUR,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6400,KALIMANTAN TIMUR,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+6400,KALIMANTAN TIMUR,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+6400,KALIMANTAN TIMUR,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6400,KALIMANTAN TIMUR,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+6400,KALIMANTAN TIMUR,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+6400,KALIMANTAN TIMUR,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+6400,KALIMANTAN TIMUR,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+6400,KALIMANTAN TIMUR,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+6500,KALIMANTAN UTARA,432,Perkotaan,61,Semester 1 (Maret),Persen,2015,2026,12,12
+6500,KALIMANTAN UTARA,432,Perkotaan,62,Semester 2 (September),Persen,2015,2025,10,10
+6500,KALIMANTAN UTARA,433,Perdesaan,61,Semester 1 (Maret),Persen,2015,2026,12,12
+6500,KALIMANTAN UTARA,433,Perdesaan,62,Semester 2 (September),Persen,2015,2025,10,10
+6500,KALIMANTAN UTARA,434,Jumlah,61,Semester 1 (Maret),Persen,2015,2026,12,12
+6500,KALIMANTAN UTARA,434,Jumlah,62,Semester 2 (September),Persen,2015,2025,10,10
+7100,SULAWESI UTARA,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7100,SULAWESI UTARA,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7100,SULAWESI UTARA,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+7100,SULAWESI UTARA,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7100,SULAWESI UTARA,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7100,SULAWESI UTARA,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+7100,SULAWESI UTARA,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7100,SULAWESI UTARA,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+7100,SULAWESI UTARA,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+7200,SULAWESI TENGAH,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7200,SULAWESI TENGAH,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7200,SULAWESI TENGAH,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+7200,SULAWESI TENGAH,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7200,SULAWESI TENGAH,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7200,SULAWESI TENGAH,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+7200,SULAWESI TENGAH,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7200,SULAWESI TENGAH,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+7200,SULAWESI TENGAH,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+7300,SULAWESI SELATAN,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7300,SULAWESI SELATAN,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7300,SULAWESI SELATAN,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+7300,SULAWESI SELATAN,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7300,SULAWESI SELATAN,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7300,SULAWESI SELATAN,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+7300,SULAWESI SELATAN,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7300,SULAWESI SELATAN,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+7300,SULAWESI SELATAN,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+7400,SULAWESI TENGGARA,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7400,SULAWESI TENGGARA,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7400,SULAWESI TENGGARA,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+7400,SULAWESI TENGGARA,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7400,SULAWESI TENGGARA,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7400,SULAWESI TENGGARA,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+7400,SULAWESI TENGGARA,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7400,SULAWESI TENGGARA,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+7400,SULAWESI TENGGARA,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+7500,GORONTALO,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7500,GORONTALO,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7500,GORONTALO,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+7500,GORONTALO,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7500,GORONTALO,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7500,GORONTALO,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+7500,GORONTALO,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7500,GORONTALO,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+7500,GORONTALO,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+7600,SULAWESI BARAT,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7600,SULAWESI BARAT,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7600,SULAWESI BARAT,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+7600,SULAWESI BARAT,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7600,SULAWESI BARAT,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+7600,SULAWESI BARAT,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+7600,SULAWESI BARAT,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+7600,SULAWESI BARAT,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+7600,SULAWESI BARAT,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+8100,MALUKU,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+8100,MALUKU,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+8100,MALUKU,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+8100,MALUKU,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+8100,MALUKU,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+8100,MALUKU,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+8100,MALUKU,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+8100,MALUKU,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+8100,MALUKU,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+8200,MALUKU UTARA,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+8200,MALUKU UTARA,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+8200,MALUKU UTARA,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+8200,MALUKU UTARA,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+8200,MALUKU UTARA,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+8200,MALUKU UTARA,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+8200,MALUKU UTARA,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+8200,MALUKU UTARA,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+8200,MALUKU UTARA,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+9100,PAPUA BARAT,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+9100,PAPUA BARAT,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+9100,PAPUA BARAT,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+9100,PAPUA BARAT,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+9100,PAPUA BARAT,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+9100,PAPUA BARAT,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+9100,PAPUA BARAT,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+9100,PAPUA BARAT,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+9100,PAPUA BARAT,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+9200,PAPUA BARAT DAYA,432,Perkotaan,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9200,PAPUA BARAT DAYA,432,Perkotaan,62,Semester 2 (September),Persen,2024,2025,2,2
+9200,PAPUA BARAT DAYA,433,Perdesaan,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9200,PAPUA BARAT DAYA,433,Perdesaan,62,Semester 2 (September),Persen,2024,2025,2,2
+9200,PAPUA BARAT DAYA,434,Jumlah,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9200,PAPUA BARAT DAYA,434,Jumlah,62,Semester 2 (September),Persen,2024,2025,2,2
+9400,PAPUA,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+9400,PAPUA,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+9400,PAPUA,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+9400,PAPUA,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+9400,PAPUA,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+9400,PAPUA,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+9400,PAPUA,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+9400,PAPUA,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+9400,PAPUA,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
+9500,PAPUA SELATAN,432,Perkotaan,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9500,PAPUA SELATAN,432,Perkotaan,62,Semester 2 (September),Persen,2024,2025,2,2
+9500,PAPUA SELATAN,433,Perdesaan,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9500,PAPUA SELATAN,433,Perdesaan,62,Semester 2 (September),Persen,2024,2025,2,2
+9500,PAPUA SELATAN,434,Jumlah,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9500,PAPUA SELATAN,434,Jumlah,62,Semester 2 (September),Persen,2024,2025,2,2
+9600,PAPUA TENGAH,432,Perkotaan,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9600,PAPUA TENGAH,432,Perkotaan,62,Semester 2 (September),Persen,2024,2025,2,2
+9600,PAPUA TENGAH,433,Perdesaan,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9600,PAPUA TENGAH,433,Perdesaan,62,Semester 2 (September),Persen,2024,2025,2,2
+9600,PAPUA TENGAH,434,Jumlah,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9600,PAPUA TENGAH,434,Jumlah,62,Semester 2 (September),Persen,2024,2025,2,2
+9700,PAPUA PEGUNUNGAN,432,Perkotaan,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9700,PAPUA PEGUNUNGAN,432,Perkotaan,62,Semester 2 (September),Persen,2024,2025,2,2
+9700,PAPUA PEGUNUNGAN,433,Perdesaan,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9700,PAPUA PEGUNUNGAN,433,Perdesaan,62,Semester 2 (September),Persen,2024,2025,2,2
+9700,PAPUA PEGUNUNGAN,434,Jumlah,61,Semester 1 (Maret),Persen,2024,2026,3,3
+9700,PAPUA PEGUNUNGAN,434,Jumlah,62,Semester 2 (September),Persen,2024,2025,2,2
+9999,INDONESIA,432,Perkotaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+9999,INDONESIA,432,Perkotaan,62,Semester 2 (September),Persen,2012,2025,13,13
+9999,INDONESIA,432,Perkotaan,63,Tahunan,Persen,2007,2011,5,5
+9999,INDONESIA,433,Perdesaan,61,Semester 1 (Maret),Persen,2012,2026,15,15
+9999,INDONESIA,433,Perdesaan,62,Semester 2 (September),Persen,2012,2025,13,13
+9999,INDONESIA,433,Perdesaan,63,Tahunan,Persen,2007,2011,5,5
+9999,INDONESIA,434,Jumlah,61,Semester 1 (Maret),Persen,2012,2026,15,15
+9999,INDONESIA,434,Jumlah,62,Semester 2 (September),Persen,2012,2025,13,13
+9999,INDONESIA,434,Jumlah,63,Tahunan,Persen,2007,2011,5,5
