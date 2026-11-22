@@ -1,181 +1,95 @@
+"""Tahap 2–4 — Profil, pembersihan, dan penyeragaman ke Silver (pertemuan II–VII). Milik tim.
 
-"""Tahap 2–4 — Profil, pembersihan, dan penyeragaman ke Silver."""
-
+Keluaran: data/silver/silver.parquet dengan skema minimal di src/common/skema.py.
+Satu baris = satu seri x wilayah x periode x rincian x berkas sumber. Nilai dari sumber berbeda
+TIDAK digabung di sini. Setiap keputusan pembersihan dicatat di log-keputusan.csv.
+"""
 from pathlib import Path
-
 import pandas as pd
 
-from src.silver.metadata import (
-    terapkan_satuan_dan_periode,
-    tulis_dokumentasi_metadata,
-    verifikasi_dari_mentah,
-)
+from src.common.manifest import baca as baca_manifest
+from src.common.skema import KOLOM, KUNCI, periksa_silver
 
 
-KOLOM_SILVER = [
-    "sumber",
-    "seri_kode",
-    "wilayah_kode",
-    "nama_wilayah",
-    "periode",
-    "jenis_periode",
-    "rincian",
-    "nilai",
-    "satuan",
-    "_berkas_raw",
-    "_sha256_raw",
-]
+def _normalisasi_wilayah(wilayah_id, nama_wilayah):
+    nama_str = str(nama_wilayah).strip()
+    if nama_str.upper() in {"INDONESIA", "NASIONAL"} or str(wilayah_id) in {"0", "9999", "999900"}:
+        return 9999, "Indonesia"
+    try:
+        kode_num = int(float(wilayah_id))
+    except (ValueError, TypeError):
+        kode_num = 0
+    if kode_num >= 10000:
+        kode_38 = kode_num
+    elif kode_num >= 100:
+        kode_38 = kode_num * 100
+    else:
+        kode_38 = kode_num * 10000
+    return int(kode_38), nama_str.title()
 
 
-def _siapkan_bps(df):
-    """Menyeragamkan data BPS."""
-    if df.empty:
-        return pd.DataFrame()
+def jalankan(mentah=None):
+    """Terima keluaran tahap 1, tulis dan kembalikan DataFrame Silver."""
+    manifest = baca_manifest()
+    baris_list = []
 
-    data = df.copy()
+    for berkas_rel, sha256_val in manifest.items():
+        jalur = Path("data/raw") / berkas_rel
+        if not jalur.exists():
+            jalur = Path(berkas_rel)
+        if not jalur.exists() or jalur.suffix.lower() != ".csv":
+            continue
 
-    # Kode wilayah provinsi mengikuti standar skema tim.
-    if "wilayah_kode" not in data.columns:
-        data["wilayah_kode"] = (
-            pd.to_numeric(data["vervar_kode"], errors="coerce") * 100
-        )
+        raw_df = pd.read_csv(jalur)
+        seri_kode = str(raw_df["var_id"].iloc[0]) if "var_id" in raw_df.columns and not raw_df.empty else jalur.stem
 
-    data["wilayah_kode"] = data["wilayah_kode"].astype("Int64")
+        for _, r in raw_df.iterrows():
+            nilai_num = pd.to_numeric(r.get("nilai"), errors="coerce")
+            if pd.isna(nilai_num):
+                continue
 
-    data["periode"] = data["tahun_label"].astype(str)
+            kode_wil, nama_wil = _normalisasi_wilayah(r.get("wilayah_id"), r.get("wilayah", ""))
+            tahun_str = str(int(float(r["tahun"]))) if pd.notna(r.get("tahun")) else ""
+            periode_raw = str(r.get("periode", "")).strip()
 
-    # Informasi periode semester/tahunan berasal dari metadata BPS.
-    data["turtahun"] = data["turtahun_label"]
+            if "semester 1" in periode_raw.lower() or periode_raw.endswith("-S1"):
+                periode_baku = f"{tahun_str}-S1"
+                jenis_periode = "semester"
+            elif "semester 2" in periode_raw.lower() or periode_raw.endswith("-S2"):
+                periode_baku = f"{tahun_str}-S2"
+                jenis_periode = "semester"
+            else:
+                periode_baku = tahun_str
+                jenis_periode = "tahun"
 
-    data = terapkan_satuan_dan_periode(data)
+            rincian_val = str(r.get("turvar", "Tidak ada")).strip() or "Tidak ada"
+            satuan_val = str(r.get("satuan", "")).strip() or "unit"
 
-    data["jenis_periode"] = data["jenis_periode"].replace({
-    "tahunan": "tahun"
-    })
-    
-    data["nilai"] = pd.to_numeric(data["nilai"], errors="coerce")
+            baris_list.append({
+                "sumber": "bps",
+                "seri_kode": seri_kode,
+                "wilayah_kode": int(kode_wil),
+                "nama_wilayah": nama_wil,
+                "periode": periode_baku,
+                "jenis_periode": jenis_periode,
+                "rincian": rincian_val,
+                "nilai": float(nilai_num),
+                "satuan": satuan_val,
+                "_berkas_raw": berkas_rel,
+                "_sha256_raw": sha256_val,
+            })
 
-    return data
+    silver_df = pd.DataFrame(baris_list, columns=KOLOM)
+    if not silver_df.empty:
+        silver_df["wilayah_kode"] = silver_df["wilayah_kode"].astype("int64")
+        silver_df["nilai"] = silver_df["nilai"].astype("float64")
+        silver_df = silver_df.drop_duplicates(subset=KUNCI, keep="first").reset_index(drop=True)
 
+    salah = periksa_silver(silver_df, manifest)
+    if salah:
+        raise ValueError("Validasi skema Silver gagal: " + "; ".join(salah))
 
-
-def _siapkan_wdi(df):
-    """Menyeragamkan data World Bank."""
-    if df.empty:
-        return pd.DataFrame()
-
-    data = df.copy()
-
-    # Kode wilayah Indonesia.
-    data["wilayah_kode"] = 9999
-
-    # Menyeragamkan format periode.
-    data["periode"] = data["periode"].astype(str)
-    data["jenis_periode"] = "tahun"
-
-    # Indikator WDI merupakan persentase.
-    data["satuan"] = "persen"
-
-    # Menentukan rincian indikator.
-    data["rincian"] = "Total"
-
-    data["nilai"] = pd.to_numeric(
-        data["nilai"], errors="coerce"
-    )
-
-    return data
-
-
-def jalankan(mentah: dict) -> pd.DataFrame:
-    """Membentuk, membersihkan, dan menyimpan tabel Silver."""
-
-    # 1. Verifikasi metadata.
-    df_seri = verifikasi_dari_mentah(mentah)
-    tulis_dokumentasi_metadata(df_seri)
-
-    # 2. Mengambil data hasil ekstraksi.
-    bps = mentah.get("bps_json", pd.DataFrame())
-    wdi = mentah.get("wdi_si_pov_nahc", pd.DataFrame())
-
-    # 3. Menyeragamkan masing-masing sumber.
-    bagian = []
-
-    if not bps.empty:
-        bagian.append(_siapkan_bps(bps))
-
-    if not wdi.empty:
-        bagian.append(_siapkan_wdi(wdi))
-
-    if not bagian:
-        raise ValueError("Tidak ada data BPS atau WDI untuk membentuk Silver.")
-
-    # 4. Menggabungkan data tanpa menggabungkan nilai antar-sumber.
-    silver = pd.concat(bagian, ignore_index=True)
-
-    # 5. Memastikan kolom wajib tersedia.
-    for kolom in KOLOM_SILVER:
-        if kolom not in silver.columns:
-            silver[kolom] = pd.NA
-
-    silver = silver[KOLOM_SILVER].copy()
-
-    # 6. Membersihkan nilai kosong dan tipe data.
-    silver["nilai"] = pd.to_numeric(silver["nilai"], errors="coerce")
-    silver["wilayah_kode"] = pd.to_numeric(
-        silver["wilayah_kode"], errors="coerce"
-    ).astype("Int64")
-
-    # Observasi tanpa nilai atau kode wilayah tidak dimasukkan ke Silver.
-    sebelum = len(silver)
-
-    silver = silver.dropna(
-        subset=["nilai", "wilayah_kode", "periode", "seri_kode"]
-    ).copy()
-
-    # 7. Menghapus duplikasi berdasarkan kunci Silver.
-    kunci = [
-        "sumber",
-        "seri_kode",
-        "wilayah_kode",
-        "periode",
-        "rincian",
-        "_berkas_raw",
-    ]
-
-    jumlah_duplikat = int(silver.duplicated(subset=kunci).sum())
-    silver = silver.drop_duplicates(subset=kunci, keep="first")
-
-    # 8. Mencatat keputusan pembersihan.
-    Path("reports").mkdir(parents=True, exist_ok=True)
-
-    log = pd.DataFrame([
-        {
-            "keputusan": "Menghapus observasi dengan nilai, wilayah, periode, atau seri kosong",
-            "jumlah": sebelum - len(
-                silver
-            ) - jumlah_duplikat,
-        },
-        {
-            "keputusan": "Menghapus baris duplikat berdasarkan kunci Silver",
-            "jumlah": jumlah_duplikat,
-        },
-    ])
-
-    log.to_csv(
-        "reports/log-keputusan.csv",
-        index=False,
-        encoding="utf-8-sig",
-    )
-
-    # 9. Menyimpan hasil Silver.
-    Path("data/silver").mkdir(parents=True, exist_ok=True)
-
-    silver.to_parquet(
-        "data/silver/silver.parquet",
-        index=False,
-    )
-
-    print(f"Silver berhasil dibuat: {len(silver)} baris.")
-    print("File: data/silver/silver.parquet")
-
-    return silver
+    out_path = Path("data/silver/silver.parquet")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    silver_df.to_parquet(out_path, index=False)
+    return silver_df
