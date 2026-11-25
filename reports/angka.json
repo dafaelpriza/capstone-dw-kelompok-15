@@ -1,3 +1,10 @@
 {
-  "baris_sql": 3869
+  "baris_gold": 1482,
+  "baris_sql": 3897,
+  "kolom_panel_lebar": 7,
+  "sel_gold_ditandai": 245,
+  "sel_gold_kosong": 153,
+  "sel_gold_terisi": 1329,
+  "seri_panel": 3,
+  "silver_tidak_terpilih": 2429
 }
