@@ -49,6 +49,7 @@ def _siapkan_tabel_seri(seri_raw: pd.DataFrame) -> pd.DataFrame:
     df["sdg_kode"] = df["kode_sdg_baku"] if "kode_sdg_baku" in df.columns else df.get("sdg_kode", None)
     df["cakupan"] = df["sumber"].apply(lambda s: "Nasional" if str(s).upper() == "WDI" else "Provinsi")
     df["kode_sumber"] = df["seri_kode"].str.replace("^var", "", regex=True)
+    df["seri_kode"] = df["seri_kode"].str.replace("^var", "", regex=True)
     df["batas_bawah"] = 0.0
     df["batas_atas"] = df["satuan"].apply(lambda u: 100.0 if str(u).lower() == "persen" else None)
     if "rujukan_tahun" not in df.columns:
