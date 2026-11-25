@@ -1,7 +1,7 @@
 
 """Tahap 4â€“6 â€” Reshape, integrasi, dan penyimpanan data Gold."""
 
-from src.gold import muat_sql, nasional
+from src.gold import muat_sql, nasional, panel_seri
 from src.gold import panel as panel_gold
 from pathlib import Path
 import sqlite3
@@ -218,14 +218,20 @@ def jalankan(silver):
     data = _siapkan_data(silver)
 
     print("Membuat panel provinsi...")
-    panel = _buat_panel_provinsi(data)
+    panel_dasar = _buat_panel_provinsi(data)
+
+    print("Membentuk grid provinsi x periode per seri dan menerapkan aturan sel...")
+    panel_per_seri = panel_seri.bangun_panel_per_seri(data)
+    panel = panel_seri.perkaya_panel_gabungan(panel_dasar, panel_per_seri)
+    panel_seri.tulis_laporan_kelengkapan(panel_dasar, panel_per_seri)
 
     print("Membuat rekonsiliasi nasional...")
     rekonsiliasi = _buat_rekonsiliasi(data)
 
     hasil = {
         "panel_provinsi": panel,
-        "rekonsiliasi_nasional": rekonsiliasi
+        "rekonsiliasi_nasional": rekonsiliasi,
+        **panel_per_seri,
     }
 
     # Menyimpan hasil ke Parquet.
