@@ -1,0 +1,154 @@
+seri_kode,periode,wilayah_kode,nama_wilayah,tingkat,kategori,bukti
+var192,2007,6500,Kalimantan Utara,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2013
+var192,2007,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2007,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2007,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2007,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2008,6500,Kalimantan Utara,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2013
+var192,2008,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2008,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2008,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2008,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2009,6500,Kalimantan Utara,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2013
+var192,2009,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2009,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2009,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2009,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2010,6500,Kalimantan Utara,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2013
+var192,2010,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2010,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2010,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2010,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2011,6500,Kalimantan Utara,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2013
+var192,2011,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2011,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2011,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2011,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2012-S1,6500,Kalimantan Utara,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2013
+var192,2012-S1,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2012-S1,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2012-S1,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2012-S1,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2012-S2,6500,Kalimantan Utara,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2013
+var192,2012-S2,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2012-S2,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2012-S2,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2012-S2,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2013-S1,6500,Kalimantan Utara,provinsi,batas_lama,Kalimantan Timur masih diterbitkan dengan batas lama pada 2013-S1; angka tidak dipecah
+var192,2013-S1,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2013-S1,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2013-S1,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2013-S1,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2013-S2,6500,Kalimantan Utara,provinsi,batas_lama,Kalimantan Timur masih diterbitkan dengan batas lama pada 2013-S2; angka tidak dipecah
+var192,2013-S2,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2013-S2,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2013-S2,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2013-S2,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2014-S1,6500,Kalimantan Utara,provinsi,batas_lama,Kalimantan Timur masih diterbitkan dengan batas lama pada 2014-S1; angka tidak dipecah
+var192,2014-S1,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2014-S1,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2014-S1,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2014-S1,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2014-S2,6500,Kalimantan Utara,provinsi,batas_lama,Kalimantan Timur masih diterbitkan dengan batas lama pada 2014-S2; angka tidak dipecah
+var192,2014-S2,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2014-S2,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2014-S2,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2014-S2,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2015-S1,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2015-S1,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2015-S1,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2015-S1,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2015-S2,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2015-S2,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2015-S2,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2015-S2,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2016-S1,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2016-S1,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2016-S1,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2016-S1,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2016-S2,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2016-S2,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2016-S2,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2016-S2,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2017-S1,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2017-S1,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2017-S1,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2017-S1,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2017-S2,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2017-S2,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2017-S2,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2017-S2,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2018-S1,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2018-S1,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2018-S1,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2018-S1,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2018-S2,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2018-S2,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2018-S2,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2018-S2,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2019-S1,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2019-S1,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2019-S1,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2019-S1,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2019-S2,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2019-S2,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2019-S2,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2019-S2,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2020-S1,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2020-S1,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2020-S1,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2020-S1,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2020-S2,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2020-S2,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2020-S2,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2020-S2,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2021-S1,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2021-S1,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2021-S1,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2021-S1,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2021-S2,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2021-S2,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2021-S2,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2021-S2,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2022-S1,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2022-S1,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2022-S1,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2022-S1,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2022-S2,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2022-S2,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2022-S2,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2022-S2,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var192,2023-S1,9200,Papua Barat Daya,provinsi,batas_lama,Papua Barat masih diterbitkan dengan batas lama pada 2023-S1; angka tidak dipecah
+var192,2023-S1,9500,Papua Selatan,provinsi,batas_lama,Papua masih diterbitkan dengan batas lama pada 2023-S1; angka tidak dipecah
+var192,2023-S1,9600,Papua Tengah,provinsi,batas_lama,Papua masih diterbitkan dengan batas lama pada 2023-S1; angka tidak dipecah
+var192,2023-S1,9700,Papua Pegunungan,provinsi,batas_lama,Papua masih diterbitkan dengan batas lama pada 2023-S1; angka tidak dipecah
+var2190,2019,3100,DKI Jakarta,provinsi,tidak_diterbitkan,DKI Jakarta tidak punya desa (seluruh wilayahnya kelurahan); tidak ada di ketiga tahun Indeks Desa
+var2190,2019,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2190,2019,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2190,2019,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2190,2019,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2190,2020,3100,DKI Jakarta,provinsi,tidak_diterbitkan,DKI Jakarta tidak punya desa (seluruh wilayahnya kelurahan); tidak ada di ketiga tahun Indeks Desa
+var2190,2020,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2190,2020,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2190,2020,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2190,2020,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2190,2021,3100,DKI Jakarta,provinsi,tidak_diterbitkan,DKI Jakarta tidak punya desa (seluruh wilayahnya kelurahan); tidak ada di ketiga tahun Indeks Desa
+var2190,2021,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2190,2021,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2190,2021,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2190,2021,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2019,3100,DKI Jakarta,provinsi,tidak_diterbitkan,DKI Jakarta tidak punya desa (seluruh wilayahnya kelurahan); tidak ada di ketiga tahun Indeks Desa
+var2191,2019,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2019,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2019,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2019,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2020,3100,DKI Jakarta,provinsi,tidak_diterbitkan,DKI Jakarta tidak punya desa (seluruh wilayahnya kelurahan); tidak ada di ketiga tahun Indeks Desa
+var2191,2020,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2020,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2020,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2020,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2021,3100,DKI Jakarta,provinsi,tidak_diterbitkan,DKI Jakarta tidak punya desa (seluruh wilayahnya kelurahan); tidak ada di ketiga tahun Indeks Desa
+var2191,2021,9200,Papua Barat Daya,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2021,9500,Papua Selatan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2021,9600,Papua Tengah,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023
+var2191,2021,9700,Papua Pegunungan,provinsi,belum_ada,provinsi dibentuk; data penuh mulai 2023

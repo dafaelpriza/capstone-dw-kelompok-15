@@ -59,3 +59,56 @@ PEMETAAN_TURTAHUN_BPS = {
     "Semester 2 (September)": ("semester", "-S2"),
     "September": ("semester", "-S2"),
 }
+
+# ------------------------------------------------------------------ Tahap 4 (Persiapan Gold)
+SERI = {
+    "var192": dict(sumber="bps", tingkat="provinsi", satuan="persen", sdg="1.2.1",
+                   nama="Persentase penduduk miskin (P0) menurut daerah"),
+    "var2190": dict(sumber="bps", tingkat="provinsi", satuan="desa", sdg="10.1.1(d)",
+                    nama="Jumlah desa mandiri"),
+    "var2191": dict(sumber="bps", tingkat="provinsi", satuan="desa", sdg="10.1.1(c)",
+                    nama="Jumlah desa tertinggal dan sangat tertinggal"),
+    "SI.POV.NAHC": dict(sumber="wdi", tingkat="nasional", satuan="persen", sdg="1.2.1",
+                        nama="Poverty headcount ratio at national poverty lines (% of population)"),
+}
+
+# Penyeragaman label rincian di Gold (rincian lain tetap di Silver dan tidak masuk panel utama)
+RINCIAN_TOTAL_BPS = {"tidak ada", "jumlah", "total"}
+RINCIAN_BPS = {
+    "var192": ("daerah", {"Perkotaan": "URBAN", "Perdesaan": "RURAL"}),
+    "var2191": ("status_desa", {"Desa Sangat Tertinggal": "sangat_tertinggal", "Desa Tertinggal": "tertinggal"}),
+}
+
+# Deret utama yang masuk panel Gold: tepat satu indikator per provinsi x periode
+DERET = {
+    "var192": ["total"],
+    "var2190": ["total"],
+    "var2191": ["total"],
+}
+
+# Urutan prioritas berkas bila satu sel memiliki lebih dari satu berkas sumber
+URUTAN_BERKAS = [
+    ("bps/*/json/*.json", "JSON WebAPI BPS"),
+    ("bps/*/*.csv", "CSV BPS"),
+]
+
+# K-005: DKI Jakarta tidak punya desa (seluruh wilayahnya kelurahan), tidak dinilai Indeks Desa
+TIDAK_TERBIT = {
+    (s, 3100, str(th)): "DKI Jakarta tidak punya desa (seluruh wilayahnya kelurahan); tidak ada di ketiga tahun Indeks Desa"
+    for s in ("var2190", "var2191")
+    for th in (2019, 2020, 2021)
+}
+
+# K-012 / var.note: pergantian sumber & definisi Indeks Desa, serta K-006 patahan 2008 var192
+_ID_DESA = {
+    "2020": "var.note: Indeks Desa 2020 dari Updating Podes 2020 dan daftar desa Kepmendagri 146/2020",
+    "2021": "var.note: Indeks Desa 2021 dari Pendataan Podes 2021 (2020: Updating Podes 2020)",
+}
+PATAHAN_DEFINISI = {
+    "var192": {"2008": "K-006: penurunan serentak pada tahun 2008 di hampir seluruh provinsi"},
+    "var2190": _ID_DESA,
+    "var2191": _ID_DESA,
+}
+
+# Hook kolom turunan opsional di Gold; nilai asli tetap dipertahankan
+GOLD_TURUNAN = {}

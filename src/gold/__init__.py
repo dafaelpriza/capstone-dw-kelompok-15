@@ -1,7 +1,8 @@
-﻿
+
 """Tahap 4â€“6 â€” Reshape, integrasi, dan penyimpanan data Gold."""
 
 from src.gold import muat_sql, nasional
+from src.gold import panel as panel_gold
 from pathlib import Path
 import sqlite3
 
@@ -248,6 +249,11 @@ def jalankan(silver):
             )
 
     print(f"Database Gold berhasil dibuat: {lokasi_sql}")
+
+    print("Menyusun panel Gold (Tahap 4)...")
+    hasil_panel = panel_gold.jalankan(silver)
+    hasil["panel"] = hasil_panel["panel"]
+    hasil["panel_lebar"] = hasil_panel["panel_lebar"]
 
     nasional.jalankan(silver)
     muat_sql.jalankan()
