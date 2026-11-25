@@ -103,14 +103,23 @@ Lapisan Gold (`data/gold/`) menyimpan panel tingkat provinsi per seri yang diben
 
 | Nama Tabel / Berkas | Dimensi Grid | Deskripsi |
 |---|---|---|
-| `panel_var192.parquet` | 38 provinsi × 33 periode (1.254 baris) | Panel kemiskinan (`var192`: `Jumlah`, `Perdesaan`, `Perkotaan`) periode `2007` s.d. `2026-S1`. |
+| `panel.parquet` | 1.482 baris × 14 kolom | Panel panjang (`long`) deret utama Gold (`var192`, `var2190`, `var2191`) hasil aturan satu nilai per sel (`src/gold/panel.py`), mencakup 1.329 sel terisi dan 153 sel kosong grid. |
+| `panel_lebar.parquet` | 1.230 baris × 7 kolom | Panel lebar (`wide`) deret utama Gold untuk sel berstatus `terisi` (`var192`, `var2190`, `var2191`). |
+| `panel_var192.parquet` | 38 provinsi × 33 periode (1.254 baris) | Panel kemiskinan seluruh rincian (`var192`: `Jumlah`, `Perdesaan`, `Perkotaan`) periode `2007` s.d. `2026-S1`. |
 | `panel_var2190.parquet` | 38 provinsi × 3 periode (114 baris) | Panel jumlah desa mandiri (`var2190`) periode tahunan `2019`–`2021`. |
-| `panel_var2191.parquet` | 38 provinsi × 3 periode (114 baris) | Panel jumlah desa tertinggal (`var2191`: `Desa_Sangat_Tertinggal`, `Desa_Tertinggal`, `Jumlah`) periode tahunan `2019`–`2021`. |
-| `panel_provinsi.parquet` | 38 provinsi × 36 periode (1.368 baris) | Panel gabungan seluruh seri BPS tingkat provinsi yang diperkaya kolom penanda per seri. |
+| `panel_var2191.parquet` | 38 provinsi × 3 periode (114 baris) | Panel jumlah desa tertinggal seluruh rincian (`var2191`: `Desa_Sangat_Tertinggal`, `Desa_Tertinggal`, `Jumlah`) periode tahunan `2019`–`2021`. |
+| `panel_provinsi.parquet` | 38 provinsi × 36 periode (1.368 baris) | Panel gabungan seluruh seri dan rincian BPS tingkat provinsi yang diperkaya kolom penanda per seri. |
 | `rekonsiliasi_nasional.parquet` | 56 periode | Perbandingan indikator nasional Indonesia (`9999`) antara BPS `var192` (`Jumlah`) dan WDI `SI.POV.NAHC`. |
 | `gudang.duckdb` | `seri` (4 baris), `silver` (3.897 baris) | Gudang relasional DuckDB dengan `PRIMARY KEY`, `FOREIGN KEY`, dan `CHECK` constraint (`src/gold/silver.sql`). |
 
-### 7.2 Struktur Kolom Panel Gold per Seri (`panel_var192`, `panel_var2190`, `panel_var2191`)
+### 7.2 Kolom Penanda pada `panel.parquet` (`src/gold/panel.py`)
+
+| Nama Kolom | Tipe Data | Nilai Sah | Arti dan Aturan Penetapan |
+|---|---|---|---|
+| `status_sel` | string (`object`) | `terisi`, `belum_ada`, `batas_lama`, `tidak_diterbitkan`, `missing` | Klasifikasi sel pada grid `38 provinsi × periode` deret utama. `terisi`: nilai tersedia di Silver (1.329 sel). `belum_ada`: provinsi pemekaran belum terbentuk (139 sel: Kaltara `< 2015` pada `var192`, 4 DOB Papua `< 2024` pada `var192` dan `2019`–`2021` pada `var2190`/`var2191`). `batas_lama`: provinsi induk sebelum pemekaran / pergeseran batas administratif (8 sel pada `var192`). `tidak_diterbitkan`: wilayah tidak diterbitkan pada seri desa (6 sel: DKI Jakarta pada `var2190` & `var2191`). `missing`: sel kosong lain dalam cakupan aktif. |
+| `penanda` | string nullable (`object`) | `outlier`, `patahan_seri`, `patahan_wilayah`, `perbedaan_struktural`, atau `null` | Penanda kualitas Sprint 1 yang dibawa ke Gold tanpa mengubah nilai observasi. `outlier`: calon outlier IQR yang dipertahankan (`K-009`). `patahan_seri`: indikasi patahan seri tahun `2008` pada `var192` (`K-006`) atau perubahan struktur seri desa. `patahan_wilayah`: pergeseran akibat pemekaran wilayah (`2024-S1`). `perbedaan_struktural`: perbedaan struktural antarwilayah/rincian. |
+
+### 7.3 Struktur Kolom Panel Gold per Seri (`panel_var192`, `panel_var2190`, `panel_var2191`)
 
 #### Kolom Kunci dan Nilai
 
@@ -135,7 +144,7 @@ Lapisan Gold (`data/gold/`) menyimpan panel tingkat provinsi per seri yang diben
 | `status_sel_var192_jumlah`, `status_sel_var192_perdesaan`, `status_sel_var192_perkotaan`, `status_sel_var2190`, `status_sel_var2191` | `panel_provinsi` | string (`object`) | `terisi`, `kosong`, `belum_terbit`, `di_luar_cakupan_periode` | Status kelengkapan per seri pada tabel gabungan `panel_provinsi` (`38 × 36`). Nilai `di_luar_cakupan_periode` menandai sel yang kosong semata karena resolusi/rentang periode seri berbeda (mis. periode tahunan `2019`–`2021` untuk `var192`, atau periode di luar `2019`–`2021` untuk `var2190`/`var2191`). |
 | `penanda_patahan_var192` | `panel_provinsi` | boolean (`bool`) | `True`, `False` | Penanda patahan seri `var192` tahun `2008` (`K-006`) pada tabel gabungan `panel_provinsi`. |
 
-### 7.3 Laporan Kelengkapan Gold
+### 7.4 Laporan Kelengkapan Gold
 
 Tabel dan ringkasan kelengkapan per seri (sebelum dan sesudah aturan sel) dihasilkan otomatis oleh `src/gold/panel_seri.py` ke:
 - `reports/kelengkapan_gold_per_seri.csv` — perbandingan numerik sebelum dan sesudah aturan sel per seri dan per indikator.

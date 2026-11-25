@@ -1,7 +1,8 @@
 {
   "metrik": {
-    "seri_dikoreksi": 4,
-    "aturan_periode_ditetapkan": 4
+    "seri_silver": 4,
+    "rincian_dienkode": 7,
+    "baris_silver": 3897
   },
   "seed": 0,
   "data_hash": "51a214fccf6711eefa382911a5be4f501cd6bd9d3b65eb8922543a65f3c7f3ed",
