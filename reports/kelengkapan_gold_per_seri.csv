@@ -1,0 +1,15 @@
+tahap_aturan,seri_kode,indikator,jumlah_provinsi,jumlah_periode,total_sel,sel_terisi,sel_kosong,sel_belum_terbit,sel_di_luar_cakupan,sel_bertanda_patahan,persen_terisi_grid,persen_terisi_aktif
+sebelum_aturan_sel,var192,var192__Jumlah,38,36,1368,1131,237,0,0,0,82.68,82.68
+sebelum_aturan_sel,var192,var192__Perdesaan,38,36,1368,1100,268,0,0,0,80.41,80.41
+sebelum_aturan_sel,var192,var192__Perkotaan,38,36,1368,1131,237,0,0,0,82.68,82.68
+sebelum_aturan_sel,var2190,var2190__Tidak_ada,38,36,1368,99,1269,0,0,0,7.24,7.24
+sebelum_aturan_sel,var2191,var2191__Desa_Sangat_Tertinggal,38,36,1368,99,1269,0,0,0,7.24,7.24
+sebelum_aturan_sel,var2191,var2191__Desa_Tertinggal,38,36,1368,99,1269,0,0,0,7.24,7.24
+sebelum_aturan_sel,var2191,var2191__Jumlah,38,36,1368,99,1269,0,0,0,7.24,7.24
+sesudah_aturan_sel,var192,var192__Jumlah,38,33,1254,1131,0,123,0,33,90.19,100.0
+sesudah_aturan_sel,var192,var192__Perdesaan,38,33,1254,1100,31,123,0,32,87.72,97.26
+sesudah_aturan_sel,var192,var192__Perkotaan,38,33,1254,1131,0,123,0,33,90.19,100.0
+sesudah_aturan_sel,var2190,var2190__Tidak_ada,38,3,114,99,3,12,0,0,86.84,97.06
+sesudah_aturan_sel,var2191,var2191__Desa_Sangat_Tertinggal,38,3,114,99,3,12,0,0,86.84,97.06
+sesudah_aturan_sel,var2191,var2191__Desa_Tertinggal,38,3,114,99,3,12,0,0,86.84,97.06
+sesudah_aturan_sel,var2191,var2191__Jumlah,38,3,114,99,3,12,0,0,86.84,97.06

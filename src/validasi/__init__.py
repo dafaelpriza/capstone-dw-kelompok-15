@@ -144,6 +144,65 @@ def validasi_gold(gold):
                 )
             })
 
+    # Memeriksa grid provinsi x periode per seri dan kolom penanda.
+    status_sah = {"terisi", "kosong", "belum_terbit"}
+    peta_panel = {
+        "panel_var192": {
+            "var192__Jumlah": "status_sel_jumlah",
+            "var192__Perdesaan": "status_sel_perdesaan",
+            "var192__Perkotaan": "status_sel_perkotaan",
+        },
+        "panel_var2190": {"var2190__Tidak_ada": "status_sel"},
+        "panel_var2191": {
+            "var2191__Desa_Sangat_Tertinggal": "status_sel",
+            "var2191__Desa_Tertinggal": "status_sel",
+            "var2191__Jumlah": "status_sel",
+        },
+    }
+
+    for nama_panel, peta_kol in peta_panel.items():
+        df_seri = gold.get(nama_panel)
+        if not isinstance(df_seri, pd.DataFrame):
+            hasil.append({
+                "tahap": "Gold",
+                "aturan": f"kelengkapan_{nama_panel}",
+                "lolos": False,
+                "keterangan": f"Tabel {nama_panel} tidak tersedia.",
+            })
+            continue
+
+        kol_penanda = set(peta_kol.values()) | {"penanda_patahan", "keterangan_sel"}
+        lengkap_kol = {"wilayah_kode", "nama_wilayah", "periode", "jenis_periode"}.issubset(df_seri.columns) and kol_penanda.issubset(df_seri.columns)
+        if not lengkap_kol:
+            hasil.append({
+                "tahap": "Gold",
+                "aturan": f"kelengkapan_{nama_panel}",
+                "lolos": False,
+                "keterangan": f"Kolom penanda pada {nama_panel} belum lengkap.",
+            })
+            continue
+
+        konsisten = True
+        for kol_val, kol_st in peta_kol.items():
+            st_valid = set(df_seri[kol_st].dropna()).issubset(status_sah)
+            terisi_cocok = (
+                (df_seri[kol_st] == "terisi") == df_seri[kol_val].notna()
+            ).all()
+            if not (st_valid and terisi_cocok):
+                konsisten = False
+                break
+
+        hasil.append({
+            "tahap": "Gold",
+            "aturan": f"penanda_sel_{nama_panel}",
+            "lolos": bool(konsisten),
+            "keterangan": (
+                f"{nama_panel}: {len(df_seri)} baris, "
+                f"{df_seri['wilayah_kode'].nunique()} provinsi x "
+                f"{df_seri['periode'].nunique()} periode diperiksa tanpa imputasi celah."
+            ),
+        })
+
     return hasil
 
 
