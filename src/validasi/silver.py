@@ -142,11 +142,16 @@ def validasi_rincian_desa(df):
     data["nilai"] = pd.to_numeric(data["nilai"], errors="coerce")
     data["rincian_normal"] = data["rincian"].astype(str).str.strip().str.lower()
 
+    # Jika Silver memuat beberapa snapshot, jumlah rincian dibandingkan
+    # di dalam berkas yang sama agar total dari snapshot berbeda tidak tercampur.
     kunci = ["wilayah_kode", "periode"]
+    if "_berkas_raw" in data.columns:
+        kunci.append("_berkas_raw")
+
     diperiksa = 0
     selisih = []
 
-    for identitas, grup in data.groupby(kunci):
+    for identitas, grup in data.groupby(kunci, dropna=False):
         total = grup.loc[
             grup["rincian_normal"].isin(["jumlah", "total"]), "nilai"
         ]

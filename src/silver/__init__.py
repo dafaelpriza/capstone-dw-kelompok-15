@@ -34,10 +34,11 @@ def _siapkan_bps(df):
 
     data = df.copy()
 
-    # Kode wilayah provinsi mengikuti standar skema tim.
+    # Kode wilayah BPS pada JSON sudah memakai kode baku 4 digit
+    # (contoh: 1100 = Aceh, 9999 = Indonesia), sehingga tidak dikalikan 100.
     if "wilayah_kode" not in data.columns:
-        data["wilayah_kode"] = (
-            pd.to_numeric(data["vervar_kode"], errors="coerce") * 100
+        data["wilayah_kode"] = pd.to_numeric(
+            data["vervar_kode"], errors="coerce"
         )
 
     data["wilayah_kode"] = data["wilayah_kode"].astype("Int64")

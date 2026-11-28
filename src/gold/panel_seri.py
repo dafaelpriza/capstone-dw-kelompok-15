@@ -7,11 +7,11 @@ NAMA_NASIONAL = {"indonesia", "nasional", "indonesia (nasional)"}
 
 # Tahun mulai terbit resmi untuk provinsi pemekaran (susunan 38 provinsi 2025, K-001).
 MULAI_TERBIT_PROVINSI = {
-    650000: 2015,  # Kalimantan Utara (mulai terbit 2015-S1)
-    920000: 2024,  # Papua Barat Daya (mulai terbit 2024-S1)
-    950000: 2024,  # Papua Selatan (mulai terbit 2024-S1)
-    960000: 2024,  # Papua Tengah (mulai terbit 2024-S1)
-    970000: 2024,  # Papua Pegunungan (mulai terbit 2024-S1)
+    6500: 2015,  # Kalimantan Utara (mulai terbit 2015-S1)
+    9200: 2024,  # Papua Barat Daya (mulai terbit 2024-S1)
+    9500: 2024,  # Papua Selatan (mulai terbit 2024-S1)
+    9600: 2024,  # Papua Tengah (mulai terbit 2024-S1)
+    9700: 2024,  # Papua Pegunungan (mulai terbit 2024-S1)
 }
 
 # Periode yang ditandai sebagai patahan seri (nilai tetap dipertahankan, K-006).
@@ -54,9 +54,9 @@ def _keterangan_baris(
     if all(s == "belum_terbit" for s in status_list):
         tag.append("belum_terbit_sebelum_pemekaran_k001")
     elif any(s == "kosong" for s in status_list):
-        if int(wilayah_kode) == 310000 and seri_kode == "var192":
+        if int(wilayah_kode) == 3100 and seri_kode == "var192":
             tag.append("kosong_perdesaan_dki_jakarta")
-        elif int(wilayah_kode) == 310000 and seri_kode in {"var2190", "var2191"}:
+        elif int(wilayah_kode) == 3100 and seri_kode in {"var2190", "var2191"}:
             tag.append("kosong_dki_jakarta_non_desa")
         else:
             tag.append("kosong_tidak_tersedia")

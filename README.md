@@ -61,7 +61,7 @@ reports/tim.md, reports/individu/<nim>.md, AI_LOG.md
   periode, jenis_periode, rincian, nilai, satuan, _berkas_raw, _sha256_raw`. Kunci unik:
   sumber + seri + wilayah + periode + rincian + berkas. Periksa dengan
   `python -m src.common.skema data/silver/silver.parquet`.
-- **Wilayah**: `wilayah_kode` 9999 = Indonesia; provinsi = kode dua digit BPS x 100 (1100 = Aceh),
+- **Wilayah**: `wilayah_kode` 9999 = Indonesia; provinsi = kode baku empat digit BPS (1100 = Aceh),
   susunan 38 provinsi tahun 2025. Aturan pemetaan provinsi pemekaran ditulis di `log-keputusan.csv`.
 - **Periode**: `2020` (tahun), `2020-S1` (semester), `2020-Q3` (triwulan), `2020-07` (bulan).
 - **Lineage**: `_sha256_raw` diambil dari `src.common.manifest.sha256_raw`, tidak ditulis tangan.

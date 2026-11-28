@@ -1,135 +1,135 @@
 seri_kode,indikator,kategori_sel,wilayah_kode,nama_wilayah,periode_awal,periode_akhir,jumlah_sel,alasan
-var192,var192__Jumlah,belum_terbit,650000,KALIMANTAN UTARA,2007,2014-S2,11,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Jumlah,belum_terbit,920000,PAPUA BARAT DAYA,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Jumlah,belum_terbit,950000,PAPUA SELATAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Jumlah,belum_terbit,960000,PAPUA TENGAH,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Jumlah,belum_terbit,970000,PAPUA PEGUNUNGAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Jumlah,patahan,110000,ACEH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,120000,SUMATERA UTARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,130000,SUMATERA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,140000,RIAU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,150000,JAMBI,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,160000,SUMATERA SELATAN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,170000,BENGKULU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,180000,LAMPUNG,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,190000,KEP. BANGKA BELITUNG,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,210000,KEP. RIAU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,310000,DKI JAKARTA,2008,2008,1,patahan_seri_2008_k006; kosong_perdesaan_dki_jakarta
-var192,var192__Jumlah,patahan,320000,JAWA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,330000,JAWA TENGAH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,340000,DI YOGYAKARTA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,350000,JAWA TIMUR,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,360000,BANTEN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,510000,BALI,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,520000,NUSA TENGGARA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,530000,NUSA TENGGARA TIMUR,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,610000,KALIMANTAN BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,620000,KALIMANTAN TENGAH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,630000,KALIMANTAN SELATAN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,640000,KALIMANTAN TIMUR,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,710000,SULAWESI UTARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,720000,SULAWESI TENGAH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,730000,SULAWESI SELATAN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,740000,SULAWESI TENGGARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,750000,GORONTALO,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,760000,SULAWESI BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,810000,MALUKU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,820000,MALUKU UTARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,910000,PAPUA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Jumlah,patahan,940000,PAPUA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,kosong,310000,DKI JAKARTA,2007,2026-S1,31,kosong_perdesaan_dki_jakarta; patahan_seri_2008_k006
-var192,var192__Perdesaan,belum_terbit,650000,KALIMANTAN UTARA,2007,2014-S2,11,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Perdesaan,belum_terbit,920000,PAPUA BARAT DAYA,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Perdesaan,belum_terbit,950000,PAPUA SELATAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Perdesaan,belum_terbit,960000,PAPUA TENGAH,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Perdesaan,belum_terbit,970000,PAPUA PEGUNUNGAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Perdesaan,patahan,110000,ACEH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,120000,SUMATERA UTARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,130000,SUMATERA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,140000,RIAU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,150000,JAMBI,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,160000,SUMATERA SELATAN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,170000,BENGKULU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,180000,LAMPUNG,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,190000,KEP. BANGKA BELITUNG,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,210000,KEP. RIAU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,320000,JAWA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,330000,JAWA TENGAH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,340000,DI YOGYAKARTA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,350000,JAWA TIMUR,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,360000,BANTEN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,510000,BALI,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,520000,NUSA TENGGARA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,530000,NUSA TENGGARA TIMUR,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,610000,KALIMANTAN BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,620000,KALIMANTAN TENGAH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,630000,KALIMANTAN SELATAN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,640000,KALIMANTAN TIMUR,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,710000,SULAWESI UTARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,720000,SULAWESI TENGAH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,730000,SULAWESI SELATAN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,740000,SULAWESI TENGGARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,750000,GORONTALO,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,760000,SULAWESI BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,810000,MALUKU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,820000,MALUKU UTARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,910000,PAPUA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perdesaan,patahan,940000,PAPUA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,belum_terbit,650000,KALIMANTAN UTARA,2007,2014-S2,11,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Perkotaan,belum_terbit,920000,PAPUA BARAT DAYA,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Perkotaan,belum_terbit,950000,PAPUA SELATAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Perkotaan,belum_terbit,960000,PAPUA TENGAH,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Perkotaan,belum_terbit,970000,PAPUA PEGUNUNGAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
-var192,var192__Perkotaan,patahan,110000,ACEH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,120000,SUMATERA UTARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,130000,SUMATERA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,140000,RIAU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,150000,JAMBI,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,160000,SUMATERA SELATAN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,170000,BENGKULU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,180000,LAMPUNG,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,190000,KEP. BANGKA BELITUNG,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,210000,KEP. RIAU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,310000,DKI JAKARTA,2008,2008,1,patahan_seri_2008_k006; kosong_perdesaan_dki_jakarta
-var192,var192__Perkotaan,patahan,320000,JAWA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,330000,JAWA TENGAH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,340000,DI YOGYAKARTA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,350000,JAWA TIMUR,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,360000,BANTEN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,510000,BALI,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,520000,NUSA TENGGARA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,530000,NUSA TENGGARA TIMUR,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,610000,KALIMANTAN BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,620000,KALIMANTAN TENGAH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,630000,KALIMANTAN SELATAN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,640000,KALIMANTAN TIMUR,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,710000,SULAWESI UTARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,720000,SULAWESI TENGAH,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,730000,SULAWESI SELATAN,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,740000,SULAWESI TENGGARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,750000,GORONTALO,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,760000,SULAWESI BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,810000,MALUKU,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,820000,MALUKU UTARA,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,910000,PAPUA BARAT,2008,2008,1,patahan_seri_2008_k006
-var192,var192__Perkotaan,patahan,940000,PAPUA,2008,2008,1,patahan_seri_2008_k006
-var2190,var2190__Tidak_ada,kosong,310000,DKI JAKARTA,2019,2021,3,kosong_dki_jakarta_non_desa
-var2190,var2190__Tidak_ada,belum_terbit,920000,PAPUA BARAT DAYA,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2190,var2190__Tidak_ada,belum_terbit,950000,PAPUA SELATAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2190,var2190__Tidak_ada,belum_terbit,960000,PAPUA TENGAH,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2190,var2190__Tidak_ada,belum_terbit,970000,PAPUA PEGUNUNGAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Desa_Sangat_Tertinggal,kosong,310000,DKI JAKARTA,2019,2021,3,kosong_dki_jakarta_non_desa
-var2191,var2191__Desa_Sangat_Tertinggal,belum_terbit,920000,PAPUA BARAT DAYA,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Desa_Sangat_Tertinggal,belum_terbit,950000,PAPUA SELATAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Desa_Sangat_Tertinggal,belum_terbit,960000,PAPUA TENGAH,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Desa_Sangat_Tertinggal,belum_terbit,970000,PAPUA PEGUNUNGAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Desa_Tertinggal,kosong,310000,DKI JAKARTA,2019,2021,3,kosong_dki_jakarta_non_desa
-var2191,var2191__Desa_Tertinggal,belum_terbit,920000,PAPUA BARAT DAYA,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Desa_Tertinggal,belum_terbit,950000,PAPUA SELATAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Desa_Tertinggal,belum_terbit,960000,PAPUA TENGAH,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Desa_Tertinggal,belum_terbit,970000,PAPUA PEGUNUNGAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Jumlah,kosong,310000,DKI JAKARTA,2019,2021,3,kosong_dki_jakarta_non_desa
-var2191,var2191__Jumlah,belum_terbit,920000,PAPUA BARAT DAYA,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Jumlah,belum_terbit,950000,PAPUA SELATAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Jumlah,belum_terbit,960000,PAPUA TENGAH,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
-var2191,var2191__Jumlah,belum_terbit,970000,PAPUA PEGUNUNGAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Jumlah,belum_terbit,6500,KALIMANTAN UTARA,2007,2014-S2,11,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Jumlah,belum_terbit,9200,PAPUA BARAT DAYA,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Jumlah,belum_terbit,9500,PAPUA SELATAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Jumlah,belum_terbit,9600,PAPUA TENGAH,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Jumlah,belum_terbit,9700,PAPUA PEGUNUNGAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Jumlah,patahan,1100,ACEH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,1200,SUMATERA UTARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,1300,SUMATERA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,1400,RIAU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,1500,JAMBI,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,1600,SUMATERA SELATAN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,1700,BENGKULU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,1800,LAMPUNG,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,1900,KEP. BANGKA BELITUNG,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,2100,KEP. RIAU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,3100,DKI JAKARTA,2008,2008,1,patahan_seri_2008_k006; kosong_perdesaan_dki_jakarta
+var192,var192__Jumlah,patahan,3200,JAWA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,3300,JAWA TENGAH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,3400,DI YOGYAKARTA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,3500,JAWA TIMUR,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,3600,BANTEN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,5100,BALI,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,5200,NUSA TENGGARA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,5300,NUSA TENGGARA TIMUR,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,6100,KALIMANTAN BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,6200,KALIMANTAN TENGAH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,6300,KALIMANTAN SELATAN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,6400,KALIMANTAN TIMUR,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,7100,SULAWESI UTARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,7200,SULAWESI TENGAH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,7300,SULAWESI SELATAN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,7400,SULAWESI TENGGARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,7500,GORONTALO,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,7600,SULAWESI BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,8100,MALUKU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,8200,MALUKU UTARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,9100,PAPUA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Jumlah,patahan,9400,PAPUA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,kosong,3100,DKI JAKARTA,2007,2026-S1,31,kosong_perdesaan_dki_jakarta; patahan_seri_2008_k006
+var192,var192__Perdesaan,belum_terbit,6500,KALIMANTAN UTARA,2007,2014-S2,11,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Perdesaan,belum_terbit,9200,PAPUA BARAT DAYA,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Perdesaan,belum_terbit,9500,PAPUA SELATAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Perdesaan,belum_terbit,9600,PAPUA TENGAH,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Perdesaan,belum_terbit,9700,PAPUA PEGUNUNGAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Perdesaan,patahan,1100,ACEH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,1200,SUMATERA UTARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,1300,SUMATERA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,1400,RIAU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,1500,JAMBI,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,1600,SUMATERA SELATAN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,1700,BENGKULU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,1800,LAMPUNG,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,1900,KEP. BANGKA BELITUNG,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,2100,KEP. RIAU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,3200,JAWA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,3300,JAWA TENGAH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,3400,DI YOGYAKARTA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,3500,JAWA TIMUR,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,3600,BANTEN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,5100,BALI,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,5200,NUSA TENGGARA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,5300,NUSA TENGGARA TIMUR,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,6100,KALIMANTAN BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,6200,KALIMANTAN TENGAH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,6300,KALIMANTAN SELATAN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,6400,KALIMANTAN TIMUR,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,7100,SULAWESI UTARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,7200,SULAWESI TENGAH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,7300,SULAWESI SELATAN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,7400,SULAWESI TENGGARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,7500,GORONTALO,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,7600,SULAWESI BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,8100,MALUKU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,8200,MALUKU UTARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,9100,PAPUA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perdesaan,patahan,9400,PAPUA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,belum_terbit,6500,KALIMANTAN UTARA,2007,2014-S2,11,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Perkotaan,belum_terbit,9200,PAPUA BARAT DAYA,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Perkotaan,belum_terbit,9500,PAPUA SELATAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Perkotaan,belum_terbit,9600,PAPUA TENGAH,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Perkotaan,belum_terbit,9700,PAPUA PEGUNUNGAN,2007,2023-S1,28,belum_terbit_sebelum_pemekaran_k001
+var192,var192__Perkotaan,patahan,1100,ACEH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,1200,SUMATERA UTARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,1300,SUMATERA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,1400,RIAU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,1500,JAMBI,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,1600,SUMATERA SELATAN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,1700,BENGKULU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,1800,LAMPUNG,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,1900,KEP. BANGKA BELITUNG,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,2100,KEP. RIAU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,3100,DKI JAKARTA,2008,2008,1,patahan_seri_2008_k006; kosong_perdesaan_dki_jakarta
+var192,var192__Perkotaan,patahan,3200,JAWA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,3300,JAWA TENGAH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,3400,DI YOGYAKARTA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,3500,JAWA TIMUR,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,3600,BANTEN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,5100,BALI,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,5200,NUSA TENGGARA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,5300,NUSA TENGGARA TIMUR,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,6100,KALIMANTAN BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,6200,KALIMANTAN TENGAH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,6300,KALIMANTAN SELATAN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,6400,KALIMANTAN TIMUR,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,7100,SULAWESI UTARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,7200,SULAWESI TENGAH,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,7300,SULAWESI SELATAN,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,7400,SULAWESI TENGGARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,7500,GORONTALO,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,7600,SULAWESI BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,8100,MALUKU,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,8200,MALUKU UTARA,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,9100,PAPUA BARAT,2008,2008,1,patahan_seri_2008_k006
+var192,var192__Perkotaan,patahan,9400,PAPUA,2008,2008,1,patahan_seri_2008_k006
+var2190,var2190__Tidak_ada,kosong,3100,DKI JAKARTA,2019,2021,3,kosong_dki_jakarta_non_desa
+var2190,var2190__Tidak_ada,belum_terbit,9200,PAPUA BARAT DAYA,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2190,var2190__Tidak_ada,belum_terbit,9500,PAPUA SELATAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2190,var2190__Tidak_ada,belum_terbit,9600,PAPUA TENGAH,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2190,var2190__Tidak_ada,belum_terbit,9700,PAPUA PEGUNUNGAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Desa_Sangat_Tertinggal,kosong,3100,DKI JAKARTA,2019,2021,3,kosong_dki_jakarta_non_desa
+var2191,var2191__Desa_Sangat_Tertinggal,belum_terbit,9200,PAPUA BARAT DAYA,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Desa_Sangat_Tertinggal,belum_terbit,9500,PAPUA SELATAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Desa_Sangat_Tertinggal,belum_terbit,9600,PAPUA TENGAH,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Desa_Sangat_Tertinggal,belum_terbit,9700,PAPUA PEGUNUNGAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Desa_Tertinggal,kosong,3100,DKI JAKARTA,2019,2021,3,kosong_dki_jakarta_non_desa
+var2191,var2191__Desa_Tertinggal,belum_terbit,9200,PAPUA BARAT DAYA,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Desa_Tertinggal,belum_terbit,9500,PAPUA SELATAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Desa_Tertinggal,belum_terbit,9600,PAPUA TENGAH,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Desa_Tertinggal,belum_terbit,9700,PAPUA PEGUNUNGAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Jumlah,kosong,3100,DKI JAKARTA,2019,2021,3,kosong_dki_jakarta_non_desa
+var2191,var2191__Jumlah,belum_terbit,9200,PAPUA BARAT DAYA,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Jumlah,belum_terbit,9500,PAPUA SELATAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Jumlah,belum_terbit,9600,PAPUA TENGAH,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
+var2191,var2191__Jumlah,belum_terbit,9700,PAPUA PEGUNUNGAN,2019,2021,3,belum_terbit_sebelum_pemekaran_k001
