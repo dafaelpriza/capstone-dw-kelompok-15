@@ -39,29 +39,29 @@ Dokumen ini melaporkan pembentukan ulang grid `provinsi × periode` untuk setiap
 
 | Seri | Indikator | Provinsi | Periode | Jumlah Sel | Keterangan |
 |---|---|---|---|---:|---|
-| `var192` | `var192__Perdesaan` | DKI JAKARTA (`310000`) | 2007 s.d. 2026-S1 | 31 | kosong_perdesaan_dki_jakarta; patahan_seri_2008_k006 |
-| `var2190` | `var2190__Tidak_ada` | DKI JAKARTA (`310000`) | 2019 s.d. 2021 | 3 | kosong_dki_jakarta_non_desa |
-| `var2191` | `var2191__Desa_Sangat_Tertinggal` | DKI JAKARTA (`310000`) | 2019 s.d. 2021 | 3 | kosong_dki_jakarta_non_desa |
-| `var2191` | `var2191__Desa_Tertinggal` | DKI JAKARTA (`310000`) | 2019 s.d. 2021 | 3 | kosong_dki_jakarta_non_desa |
-| `var2191` | `var2191__Jumlah` | DKI JAKARTA (`310000`) | 2019 s.d. 2021 | 3 | kosong_dki_jakarta_non_desa |
+| `var192` | `var192__Perdesaan` | DKI JAKARTA (`3100`) | 2007 s.d. 2026-S1 | 31 | kosong_perdesaan_dki_jakarta; patahan_seri_2008_k006 |
+| `var2190` | `var2190__Tidak_ada` | DKI JAKARTA (`3100`) | 2019 s.d. 2021 | 3 | kosong_dki_jakarta_non_desa |
+| `var2191` | `var2191__Desa_Sangat_Tertinggal` | DKI JAKARTA (`3100`) | 2019 s.d. 2021 | 3 | kosong_dki_jakarta_non_desa |
+| `var2191` | `var2191__Desa_Tertinggal` | DKI JAKARTA (`3100`) | 2019 s.d. 2021 | 3 | kosong_dki_jakarta_non_desa |
+| `var2191` | `var2191__Jumlah` | DKI JAKARTA (`3100`) | 2019 s.d. 2021 | 3 | kosong_dki_jakarta_non_desa |
 
 ## 4. Rincian Sel Belum Terbit (`belum_terbit`)
 
 | Seri | Provinsi | Kode Wilayah | Rentang Periode | Sel per Indikator | Total Sel (Semua Rincian) | Alasan |
 |---|---|---:|---|---:|---:|---|
-| `var192` | KALIMANTAN UTARA | `650000` | 2007 s.d. 2014-S2 | 11 | 33 | belum_terbit_sebelum_pemekaran_k001 |
-| `var192` | PAPUA BARAT DAYA | `920000` | 2007 s.d. 2023-S1 | 28 | 84 | belum_terbit_sebelum_pemekaran_k001 |
-| `var192` | PAPUA SELATAN | `950000` | 2007 s.d. 2023-S1 | 28 | 84 | belum_terbit_sebelum_pemekaran_k001 |
-| `var192` | PAPUA TENGAH | `960000` | 2007 s.d. 2023-S1 | 28 | 84 | belum_terbit_sebelum_pemekaran_k001 |
-| `var192` | PAPUA PEGUNUNGAN | `970000` | 2007 s.d. 2023-S1 | 28 | 84 | belum_terbit_sebelum_pemekaran_k001 |
-| `var2190` | PAPUA BARAT DAYA | `920000` | 2019 s.d. 2021 | 3 | 3 | belum_terbit_sebelum_pemekaran_k001 |
-| `var2190` | PAPUA SELATAN | `950000` | 2019 s.d. 2021 | 3 | 3 | belum_terbit_sebelum_pemekaran_k001 |
-| `var2190` | PAPUA TENGAH | `960000` | 2019 s.d. 2021 | 3 | 3 | belum_terbit_sebelum_pemekaran_k001 |
-| `var2190` | PAPUA PEGUNUNGAN | `970000` | 2019 s.d. 2021 | 3 | 3 | belum_terbit_sebelum_pemekaran_k001 |
-| `var2191` | PAPUA BARAT DAYA | `920000` | 2019 s.d. 2021 | 3 | 9 | belum_terbit_sebelum_pemekaran_k001 |
-| `var2191` | PAPUA SELATAN | `950000` | 2019 s.d. 2021 | 3 | 9 | belum_terbit_sebelum_pemekaran_k001 |
-| `var2191` | PAPUA TENGAH | `960000` | 2019 s.d. 2021 | 3 | 9 | belum_terbit_sebelum_pemekaran_k001 |
-| `var2191` | PAPUA PEGUNUNGAN | `970000` | 2019 s.d. 2021 | 3 | 9 | belum_terbit_sebelum_pemekaran_k001 |
+| `var192` | KALIMANTAN UTARA | `6500` | 2007 s.d. 2014-S2 | 11 | 33 | belum_terbit_sebelum_pemekaran_k001 |
+| `var192` | PAPUA BARAT DAYA | `9200` | 2007 s.d. 2023-S1 | 28 | 84 | belum_terbit_sebelum_pemekaran_k001 |
+| `var192` | PAPUA SELATAN | `9500` | 2007 s.d. 2023-S1 | 28 | 84 | belum_terbit_sebelum_pemekaran_k001 |
+| `var192` | PAPUA TENGAH | `9600` | 2007 s.d. 2023-S1 | 28 | 84 | belum_terbit_sebelum_pemekaran_k001 |
+| `var192` | PAPUA PEGUNUNGAN | `9700` | 2007 s.d. 2023-S1 | 28 | 84 | belum_terbit_sebelum_pemekaran_k001 |
+| `var2190` | PAPUA BARAT DAYA | `9200` | 2019 s.d. 2021 | 3 | 3 | belum_terbit_sebelum_pemekaran_k001 |
+| `var2190` | PAPUA SELATAN | `9500` | 2019 s.d. 2021 | 3 | 3 | belum_terbit_sebelum_pemekaran_k001 |
+| `var2190` | PAPUA TENGAH | `9600` | 2019 s.d. 2021 | 3 | 3 | belum_terbit_sebelum_pemekaran_k001 |
+| `var2190` | PAPUA PEGUNUNGAN | `9700` | 2019 s.d. 2021 | 3 | 3 | belum_terbit_sebelum_pemekaran_k001 |
+| `var2191` | PAPUA BARAT DAYA | `9200` | 2019 s.d. 2021 | 3 | 9 | belum_terbit_sebelum_pemekaran_k001 |
+| `var2191` | PAPUA SELATAN | `9500` | 2019 s.d. 2021 | 3 | 9 | belum_terbit_sebelum_pemekaran_k001 |
+| `var2191` | PAPUA TENGAH | `9600` | 2019 s.d. 2021 | 3 | 9 | belum_terbit_sebelum_pemekaran_k001 |
+| `var2191` | PAPUA PEGUNUNGAN | `9700` | 2019 s.d. 2021 | 3 | 9 | belum_terbit_sebelum_pemekaran_k001 |
 
 ## 5. Rincian Sel Bertanda Patahan (`penanda_patahan`)
 

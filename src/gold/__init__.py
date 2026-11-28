@@ -45,6 +45,38 @@ def _siapkan_data(silver):
     return data
 
 
+
+
+def _pilih_snapshot_data(data):
+    """Memilih snapshot terbaru per seri sebelum seluruh tabel Gold dibentuk.
+
+    Aturan ini diterapkan juga pada panel gabungan, panel per seri, dan rekonsiliasi
+    agar duplikasi snapshot tidak menggagalkan pivot sebelum panel.py dijalankan.
+    """
+    if data.empty or "_berkas_raw" not in data.columns:
+        return data.copy(), {"snapshot_dibuang": 0, "snapshot_terpilih": {}}
+
+    d = data.copy()
+    d["_snapshot"] = d["_berkas_raw"].fillna("").astype(str).str.split("/").str[1].fillna("")
+    snapshot_terpilih = {}
+    for seri, grup in d.groupby("seri_kode", sort=False):
+        daftar = sorted(x for x in grup["_snapshot"].unique() if x)
+        if len(daftar) > 1:
+            snapshot_terpilih[seri] = daftar[-1]
+
+    if snapshot_terpilih:
+        mask = pd.Series(True, index=d.index)
+        for seri, terbaru in snapshot_terpilih.items():
+            mask &= (d["seri_kode"] != seri) | (d["_snapshot"] == terbaru)
+        d = d.loc[mask].copy()
+
+    d = d.drop(columns="_snapshot")
+    return d, {
+        "snapshot_dibuang": int(len(data) - len(d)),
+        "snapshot_terpilih": snapshot_terpilih,
+    }
+
+
 def _buat_panel_provinsi(data):
     """Membuat panel provinsi dengan indikator sebagai kolom."""
 
@@ -216,6 +248,12 @@ def jalankan(silver):
     print("Menyiapkan data Gold...")
 
     data = _siapkan_data(silver)
+    data, info_snapshot = _pilih_snapshot_data(data)
+    if info_snapshot["snapshot_dibuang"]:
+        print(
+            "Snapshot lama dibuang sebelum pembentukan Gold: "
+            f"{info_snapshot['snapshot_dibuang']} baris."
+        )
 
     print("Membuat panel provinsi...")
     panel_dasar = _buat_panel_provinsi(data)
@@ -261,7 +299,14 @@ def jalankan(silver):
     hasil["panel"] = hasil_panel["panel"]
     hasil["panel_lebar"] = hasil_panel["panel_lebar"]
 
-    nasional.jalankan(silver)
+    # Panel panjang dan lebar juga dimasukkan ke SQLite Gold.
+    with sqlite3.connect(FOLDER_GOLD / "gold.sqlite") as koneksi:
+        for nama_tabel in ("panel", "panel_lebar"):
+            hasil[nama_tabel].to_sql(
+                nama_tabel, koneksi, if_exists="replace", index=False
+            )
+
+    nasional.jalankan(data)
     muat_sql.jalankan()
     return hasil
 

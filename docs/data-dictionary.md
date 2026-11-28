@@ -9,7 +9,7 @@ Tabel Silver memiliki 11 kolom berikut
 |---|---|---|---|---|
 | sumber | string (object) | - | Menunjukkan sumber observasi, yaitu bps atau wdi. | Nilai tetap yang ditambahkan saat ekstraksi berdasarkan berkas sumber: src/ekstraksi/bps.py dan src/ekstraksi/wdi.py. |
 | seri_kode | string (object) | - | Kode unik seri/indikator, yaitu var192, var2190, var2191, atau SI.POV.NAHC. | BPS: dibentuk dari kode variabel var pada JSON BPS. WDI: diambil dari indicator.id dan disaring agar sama persis dengan SI.POV.NAHC. |
-| wilayah_kode | integer nullable (Int64) | Kode wilayah | Kode baku wilayah. 9999 digunakan untuk Indonesia; kode provinsi BPS dikalikan 100 sesuai keputusan pemetaan kode wilayah. | BPS: berasal dari vervar_kode lalu dikalikan 100. WDI: ditetapkan menjadi 9999 untuk Indonesia. |
+| wilayah_kode | integer nullable (Int64) | Kode wilayah | Kode baku wilayah. 9999 digunakan untuk Indonesia; kode provinsi mengikuti kode empat digit pada JSON BPS (contoh 1100 = Aceh). | BPS: diambil langsung dari vervar_kode karena kode pada JSON BPS sudah berupa kode baku empat digit (contoh 1100 = Aceh). WDI: ditetapkan menjadi 9999 untuk Indonesia. |
 | nama_wilayah | string (object) | - | Nama wilayah yang terkait dengan observasi, misalnya nama provinsi atau Indonesia. | BPS: label dimensi vervar pada JSON BPS. WDI: nama negara dari objek country.value. |
 | periode | string (object) | Tahun atau semester | Periode waktu observasi. Periode tahunan menggunakan format AAAA, sedangkan periode semester menggunakan AAAA-S1 atau AAAA-S2. | BPS: berasal dari label tahun dan diseragamkan memakai label turtahun tanpa merata-ratakan semester. WDI: berasal dari date pada observasi WDI. |
 | jenis_periode | string (object) | - | Menjelaskan bentuk periode observasi, yaitu tahun atau semester. | BPS: ditentukan dari metadata turtahun setelah pemetaan. WDI: ditetapkan sebagai tahun karena data WDI pada seri ini bersifat tahunan. |
@@ -31,7 +31,7 @@ Tabel Silver memiliki 11 kolom berikut
 ## 3. Aturan Penyeragaman dan Pembentukan Silver
 
 1. Data BPS yang digunakan untuk membentuk Silver berasal dari JSON BPS. Berkas CSV BPS tetap diekstrak, tetapi tidak digabungkan ke tabel Silver agar observasi yang sama tidak tercatat dua kali.
-2. Kode wilayah provinsi BPS diseragamkan dengan mengalikan kode vervar dua digit dengan 100. Kode 9999 digunakan untuk Indonesia.
+2. Kode wilayah provinsi BPS diambil langsung dari kode vervar empat digit pada JSON. Kode 9999 digunakan untuk Indonesia.
 3. Periode BPS dipertahankan sesuai resolusi sumber. Periode tahunan disimpan sebagai AAAA; periode semester disimpan sebagai AAAA-S1 (Maret) dan AAAA-S2 (September). Nilai semester tidak dirata-ratakan menjadi nilai tahunan.
 4. Data WDI untuk Indonesia diberi wilayah_kode = 9999, jenis_periode = tahun, rincian = Total, dan satuan = persen.
 5. Baris tanpa nilai, wilayah_kode, periode, atau seri_kode tidak dimasukkan ke Silver.
@@ -65,7 +65,7 @@ miskin (var192) memiliki informasi berikut:
 |---|---|
 | sumber | bps |
 | seri_kode | var192 |
-| wilayah_kode | 640000 |
+| wilayah_kode | 6400 |
 | nama_wilayah | KALIMANTAN TIMUR |
 | periode | 2008 |
 | jenis_periode | tahun |
@@ -97,7 +97,7 @@ Dengan demikian, asal observasi dapat diperiksa kembali tanpa menebak sumbernya.
 
 ## 7. Data Gold dan Kolom Penanda
 
-Lapisan Gold (`data/gold/`) menyimpan panel tingkat provinsi per seri yang dibentuk ulang dari Silver beserta tabel gabungan dan rekonsiliasi nasional (juga dimuat ke `data/gold/gold.sqlite`). Sesuai keputusan `K-003`, `K-006`, `K-011`, dan `K-012`, **celah pada grid Gold tidak diisi** (tanpa imputasi/interpolasi) dan setiap sel diberi penanda eksplisit.
+Lapisan Gold (`data/gold/`) menyimpan panel tingkat provinsi per seri yang dibentuk ulang dari Silver beserta tabel gabungan dan rekonsiliasi nasional. Seluruh tabel Parquet Gold, termasuk `panel` dan `panel_lebar`, dimuat ke `data/gold/gold.sqlite`; tabel `seri` dan `silver` juga dimuat ke gudang DuckDB `data/gold/gudang.duckdb`. Sesuai keputusan `K-003`, `K-006`, `K-011`, dan `K-012`, **celah pada grid Gold tidak diisi** (tanpa imputasi/interpolasi) dan setiap sel diberi penanda eksplisit.
 
 ### 7.1 Daftar Tabel Gold
 
@@ -137,8 +137,8 @@ Lapisan Gold (`data/gold/`) menyimpan panel tingkat provinsi per seri yang diben
 
 | Nama Kolom | Terdapat Pada | Tipe Data | Nilai Sah | Arti dan Aturan Penetapan |
 |---|---|---|---|---|
-| `status_sel_jumlah`, `status_sel_perdesaan`, `status_sel_perkotaan` | `panel_var192` | string (`object`) | `terisi`, `kosong`, `belum_terbit` | Status kelengkapan masing-masing rincian pada `panel_var192`. `terisi`: nilai observasi tersedia di Silver (termasuk `0.0` pada DKI Jakarta Perdesaan 2012-S2 & 2016-S2 sesuai `K-011`). `belum_terbit`: provinsi pemekaran belum terbentuk/terbit pada periode tersebut (Kalimantan Utara `650000` untuk `2007`–`2014-S2`; 4 DOB Papua `920000`, `950000`, `960000`, `970000` untuk `2007`–`2023-S1`). `kosong`: sel tidak terisi meski provinsi dan periode aktif (DKI Jakarta `310000` pada `Perdesaan` untuk 31 periode). |
-| `status_sel` | `panel_var2190`, `panel_var2191` | string (`object`) | `terisi`, `kosong`, `belum_terbit` | Status kelengkapan sel pada panel desa (`2019`–`2021`). `terisi`: seluruh 33 provinsi non-DKI dan non-DOB Papua. `belum_terbit`: 4 DOB Papua (`920000`, `950000`, `960000`, `970000`) karena baru terbentuk setelah 2021. `kosong`: DKI Jakarta (`310000`) karena tidak memiliki wilayah administrasi desa (hanya kelurahan). |
+| `status_sel_jumlah`, `status_sel_perdesaan`, `status_sel_perkotaan` | `panel_var192` | string (`object`) | `terisi`, `kosong`, `belum_terbit` | Status kelengkapan masing-masing rincian pada `panel_var192`. `terisi`: nilai observasi tersedia di Silver (termasuk `0.0` pada DKI Jakarta Perdesaan 2012-S2 & 2016-S2 sesuai `K-011`). `belum_terbit`: provinsi pemekaran belum terbentuk/terbit pada periode tersebut (Kalimantan Utara `6500` untuk `2007`–`2014-S2`; 4 DOB Papua `9200`, `9500`, `9600`, `9700` untuk `2007`–`2023-S1`). `kosong`: sel tidak terisi meski provinsi dan periode aktif (DKI Jakarta `3100` pada `Perdesaan` untuk 31 periode). |
+| `status_sel` | `panel_var2190`, `panel_var2191` | string (`object`) | `terisi`, `kosong`, `belum_terbit` | Status kelengkapan sel pada panel desa (`2019`–`2021`). `terisi`: seluruh 33 provinsi non-DKI dan non-DOB Papua. `belum_terbit`: 4 DOB Papua (`9200`, `9500`, `9600`, `9700`) karena baru terbentuk setelah 2021. `kosong`: DKI Jakarta (`3100`) karena tidak memiliki wilayah administrasi desa (hanya kelurahan). |
 | `penanda_patahan` | `panel_var192`, `panel_var2190`, `panel_var2191` | boolean (`bool`) | `True`, `False` | Menandai sel observasi yang berada pada titik patahan seri (`series break`). Bernilai `True` pada `panel_var192` periode `2008` untuk provinsi yang sudah terbit (penurunan serentak 2007→2008 pada 33 provinsi `Jumlah`/`Perkotaan` dan 32 provinsi `Perdesaan`, sesuai `K-006`). Nilai tetap dipertahankan tanpa koreksi. Pada `panel_var2190` dan `panel_var2191` seluruh baris bernilai `False`. |
 | `keterangan_sel` | `panel_var192`, `panel_var2190`, `panel_var2191` | string (`object`) | `normal`, tag keterangan | Ringkasan alasan status sel dan patahan pada baris bersangkutan: `normal`, `patahan_seri_2008_k006`, `belum_terbit_sebelum_pemekaran_k001`, `kosong_perdesaan_dki_jakarta`, `kosong_dki_jakarta_non_desa`, atau gabungannya (`;` sebagai pemisah). |
 | `status_sel_var192_jumlah`, `status_sel_var192_perdesaan`, `status_sel_var192_perkotaan`, `status_sel_var2190`, `status_sel_var2191` | `panel_provinsi` | string (`object`) | `terisi`, `kosong`, `belum_terbit`, `di_luar_cakupan_periode` | Status kelengkapan per seri pada tabel gabungan `panel_provinsi` (`38 × 36`). Nilai `di_luar_cakupan_periode` menandai sel yang kosong semata karena resolusi/rentang periode seri berbeda (mis. periode tahunan `2019`–`2021` untuk `var192`, atau periode di luar `2019`–`2021` untuk `var2190`/`var2191`). |

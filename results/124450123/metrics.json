@@ -1,10 +1,10 @@
 {
   "metrik": {
-    "aturan_validasi": 16,
-    "aturan_lolos": 16,
+    "aturan_validasi": 19,
+    "aturan_lolos": 19,
     "aturan_gagal": 0
   },
   "seed": 0,
   "data_hash": "51a214fccf6711eefa382911a5be4f501cd6bd9d3b65eb8922543a65f3c7f3ed",
-  "perangkat": "Windows AMD64 Python 3.13.7"
+  "perangkat": "Windows AMD64 Python 3.13.14"
 }

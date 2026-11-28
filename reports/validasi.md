@@ -2,8 +2,8 @@
 
 ## Ringkasan
 
-- Jumlah aturan: 16
-- Aturan lolos: 16
+- Jumlah aturan: 19
+- Aturan lolos: 19
 - Aturan gagal: 0
 
 ## Hasil Pemeriksaan
@@ -21,6 +21,9 @@
 | Gold | kelengkapan_panel | LOLOS | Panel memiliki 1368 baris dan 17 kolom. |
 | Gold | keunikan_panel | LOLOS | Ditemukan 0 baris dengan kunci wilayah dan periode berulang. |
 | Gold | nilai_panel | LOLOS | 7 kolom indikator diperiksa. |
+| Gold | kelengkapan_panel_panjang | LOLOS | Panel panjang memiliki 1482 baris. |
+| Gold | keunikan_panel_panjang | LOLOS | Ditemukan 0 baris dengan indikator, wilayah, dan periode berulang. |
+| Gold | konsistensi_status_panel_panjang | LOLOS | Status sel sesuai dengan ketersediaan nilai. |
 | Gold | kelengkapan_rekonsiliasi | LOLOS | Tabel rekonsiliasi memiliki 56 baris. |
 | Gold | konsistensi_selisih | LOLOS | 5 pasangan nilai BPS dan WDI diperiksa. |
 | Gold | penanda_sel_panel_var192 | LOLOS | panel_var192: 1254 baris, 38 provinsi x 33 periode diperiksa tanpa imputasi celah. |

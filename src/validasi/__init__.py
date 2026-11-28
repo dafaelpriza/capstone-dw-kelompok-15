@@ -89,6 +89,69 @@ def validasi_gold(gold):
                 )
             })
 
+    # Memeriksa panel panjang utama yang dibentuk oleh src/gold/panel.py.
+    panel_panjang = gold.get("panel")
+    if not isinstance(panel_panjang, pd.DataFrame):
+        hasil.append({
+            "tahap": "Gold",
+            "aturan": "kelengkapan_panel_panjang",
+            "lolos": False,
+            "keterangan": "Tabel panel panjang tidak tersedia.",
+        })
+    else:
+        wajib_panel = {
+            "indikator", "wilayah_kode", "nama_wilayah",
+            "periode", "jenis_periode", "nilai", "status_sel", "penanda",
+        }
+        lengkap_panel = wajib_panel.issubset(panel_panjang.columns)
+        hasil.append({
+            "tahap": "Gold",
+            "aturan": "kelengkapan_panel_panjang",
+            "lolos": bool(lengkap_panel),
+            "keterangan": (
+                f"Panel panjang memiliki {len(panel_panjang)} baris."
+                if lengkap_panel else "Kolom wajib panel panjang belum lengkap."
+            ),
+        })
+
+        if lengkap_panel:
+            kunci_panel = ["indikator", "wilayah_kode", "periode"]
+            duplikat_panel = panel_panjang.duplicated(
+                subset=kunci_panel, keep=False
+            )
+            hasil.append({
+                "tahap": "Gold",
+                "aturan": "keunikan_panel_panjang",
+                "lolos": not duplikat_panel.any(),
+                "keterangan": (
+                    f"Ditemukan {int(duplikat_panel.sum())} baris "
+                    "dengan indikator, wilayah, dan periode berulang."
+                ),
+            })
+
+            status_panel_sah = {
+                "terisi", "missing", "tidak_diterbitkan",
+                "belum_ada", "batas_lama",
+            }
+            status_valid = (
+                panel_panjang["status_sel"].notna().all()
+                and set(panel_panjang["status_sel"].dropna()).issubset(status_panel_sah)
+            )
+            nilai_sesuai = (
+                (panel_panjang["status_sel"] == "terisi")
+                == panel_panjang["nilai"].notna()
+            ).all()
+            hasil.append({
+                "tahap": "Gold",
+                "aturan": "konsistensi_status_panel_panjang",
+                "lolos": bool(status_valid and nilai_sesuai),
+                "keterangan": (
+                    "Status sel sesuai dengan ketersediaan nilai."
+                    if status_valid and nilai_sesuai
+                    else "Ada status tidak sah atau status terisi tidak sesuai dengan nilai."
+                ),
+            })
+
     # Memeriksa tabel rekonsiliasi.
     rekonsiliasi = gold.get("rekonsiliasi_nasional")
 
